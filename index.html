@@ -1,420 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Virtual Assistant Portfolio — Lesiree Bautista</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesiree Bautista — Virtual Assistant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
 
-
-  </style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">Lesiree<span>Bautista</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav1">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="nav1">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tools">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Work</a></li>
-        <li class="nav-item ms-lg-2">
-          <a class="btn btn-hire" href="mailto:idolismylesiree@gmail.com">
-            <i class="bi bi-chat-heart me-1"></i>Hire Me
-          </a>
-        </li>
-      </ul>
+  <!-- ════════════════ NAVBAR ════════════════ -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Lesiree<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto me-3 gap-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Tools</a></li>
+          <li class="nav-item"><a class="nav-link" href="#setup">My Setup</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-hire">Hire Me</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-blob blob1"></div>
-  <div class="hero-blob blob2"></div>
-  <div class="hero-blob blob3"></div>
-  <div class="container position-relative">
-    <div class="row align-items-center">
-      <div class="col-lg-7 mb-5 mb-lg-0">
-        <div class="hero-eyebrow">
-          <i class="bi bi-stars"></i> Open for Freelance
+  <!-- ════════════════ HERO ════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-blob blob1"></div>
+    <div class="hero-blob blob2"></div>
+    <div class="hero-blob blob3"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-7 order-2 order-lg-1">
+          <div class="avail-badge">
+            <span class="avail-dot"></span>
+            Available for Work
+          </div>
+          <h1 class="hero-name">Hi, I'm <span>Lesiree<br>Bautista</span></h1>
+          <p class="hero-role">Virtual Assistant · Philippines 🇵🇭</p>
+          <p class="hero-bio">
+            I help busy entrepreneurs and teams stay organized, on track, and stress-free.
+            From managing schedules and inboxes to research and admin tasks — I've got your back,
+            so you can focus on what matters most.
+          </p>
+          <div class="chip-row">
+            <span class="chip warm">Admin Support</span>
+            <span class="chip warm">Email Management</span>
+            <span class="chip sage">Calendar & Scheduling</span>
+            <span class="chip sage">Data Entry</span>
+            <span class="chip warm">Research</span>
+            <span class="chip warm">Customer Support</span>
+            <span class="chip sage">Social Media</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary-c">Get In Touch</a>
+            <a href="#services" class="btn btn-outline-c">View Services</a>
+          </div>
         </div>
-        <h1>Creative<br><span class="italic">Virtual Assistant</span><br>for Hire</h1>
-        <p class="hero-sub">
-          I help brands grow online through polished social media content, efficient inbox management,
-          and eye-catching photo &amp; video edits. Based in the Philippines, working globally.
+
+        <div class="col-lg-5 order-1 order-lg-2 text-center">
+          <!--
+          ★ ADD YOUR PHOTO HERE ★
+          Replace the placeholder below:
+          1. Remove the .photo-placeholder div
+          2. Change the img tag: display:none → display:block
+          3. Set src to your photo file
+        -->
+          <div class="photo-frame">
+            <img src="/picture/you-photo.jpg" alt="Lesiree Bautista">
+          </div>
+          <div class="d-flex justify-content-center gap-3">
+            <div class="text-center">
+              <div style="font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--rose); font-weight:700;">
+                2+</div>
+              <div style="font-size:.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px;">Years Exp.
+              </div>
+            </div>
+            <div style="width:1px; background:var(--border);"></div>
+            <div class="text-center">
+              <div style="font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--rose); font-weight:700;">
+                100%</div>
+              <div style="font-size:.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px;">Remote
+                Ready</div>
+            </div>
+            <div style="width:1px; background:var(--border);"></div>
+            <div class="text-center">
+              <div style="font-family:'Playfair Display',serif; font-size:1.5rem; color:var(--rose); font-weight:700;">
+                24h</div>
+              <div style="font-size:.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:1px;">Response
+                Time</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ ABOUT ════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-5 reveal">
+          <div class="eyebrow">About Me</div>
+          <h2 class="sec-title">Your reliable<br>remote partner</h2>
+          <p class="sec-desc mb-4">
+            I'm a detail-oriented Virtual Assistant based in the Philippines with a passion for
+            keeping things running smoothly. I love organizing chaos, managing communication,
+            and making sure nothing falls through the cracks.
+          </p>
+          <p class="sec-desc mb-4">
+            Whether you need help managing your calendar, handling customer emails, doing research,
+            or just keeping your day-to-day operations in order — I'm here to help you work smarter.
+          </p>
+          <div class="d-flex gap-2 flex-wrap">
+            <span class="chip warm">Detail-Oriented</span>
+            <span class="chip sage">Proactive</span>
+            <span class="chip warm">Reliable</span>
+            <span class="chip sage">Tech-Savvy</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="about-stat">
+                <div class="val">Admin</div>
+                <div class="lbl">Organization Pro</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-stat">
+                <div class="val">100%</div>
+                <div class="lbl">Remote Ready</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-stat">
+                <div class="val">PH</div>
+                <div class="lbl">Based in Philippines</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="about-stat">
+                <div class="val">Flex</div>
+                <div class="lbl">Flexible Hours</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ SERVICES ════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="eyebrow">What I Offer</div>
+        <h2 class="sec-title">Services</h2>
+        <p class="sec-desc mx-auto" style="max-width:480px;">
+          From daily admin tasks to specialized support — I offer a wide range of VA services
+          tailored to your needs.
         </p>
-        <div class="hero-btns">
-          <a href="#portfolio" class="btn btn-hire px-4 py-2">
-            <i class="bi bi-grid-1x2 me-2"></i>See My Work
-          </a>
-          <a href="mailto:idolismylesiree@gmail.com" class="btn btn-ghost">
-            <i class="bi bi-envelope me-2"></i>Email Me
-          </a>
-        </div>
       </div>
-      <div class="col-lg-5 hero-right text-center">
-        <div class="profile-ring">
-          <div class="avatar-initials">LB</div>
-          <div class="avail-dot"></div>
+      <div class="row g-3">
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="svc-card">
+            <div class="svc-icon"><i class="bi bi-envelope-open"></i></div>
+            <h5>Email Management</h5>
+            <p>Inbox organization, responding to routine emails, flagging priorities, and keeping your inbox at zero.
+            </p>
+            <div class="tags">
+              <span class="tag">Gmail</span><span class="tag">Outlook</span><span class="tag">Filtering</span>
+            </div>
+          </div>
         </div>
-        <p style="color:rgba(255,255,255,.5); font-size:.85rem; margin-bottom:1rem;">What I can do for you →</p>
-        <div>
-          <span class="service-pill"><i class="bi bi-instagram"></i> Social Media Manager</span>
-          <span class="service-pill"><i class="bi bi-envelope-heart"></i> Email Manager</span>
-          <span class="service-pill"><i class="bi bi-camera"></i> Photo Editor</span>
-          <span class="service-pill"><i class="bi bi-camera-video"></i> Video Editor</span>
-          <span class="service-pill"><i class="bi bi-palette"></i> Content Creator</span>
-          <span class="service-pill"><i class="bi bi-calendar-check"></i> Scheduler</span>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="svc-card">
+            <div class="svc-icon"><i class="bi bi-calendar-check"></i></div>
+            <h5>Calendar & Scheduling</h5>
+            <p>Managing appointments, setting reminders, coordinating meetings, and keeping your day organized.</p>
+            <div class="tags">
+              <span class="tag">Google Calendar</span><span class="tag">Calendly</span><span class="tag">Zoom</span>
+            </div>
+          </div>
         </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="svc-card">
+            <div class="svc-icon"><i class="bi bi-clipboard-data"></i></div>
+            <h5>Data Entry & Research</h5>
+            <p>Accurate data entry, web research, compiling reports, and building organized spreadsheets.</p>
+            <div class="tags">
+              <span class="tag">Google Sheets</span><span class="tag">Excel</span><span class="tag">Docs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="svc-card">
+            <div class="svc-icon"><i class="bi bi-chat-dots"></i></div>
+            <h5>Customer Support</h5>
+            <p>Handling customer inquiries, managing support tickets, and providing friendly, timely responses.</p>
+            <div class="tags">
+              <span class="tag">Live Chat</span><span class="tag">Email</span><span class="tag">Freshdesk</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="svc-card">
+            <div class="svc-icon"><i class="bi bi-instagram"></i></div>
+            <h5>Social Media Support</h5>
+            <p>Scheduling posts, basic content creation, engaging with followers, and monitoring accounts.</p>
+            <div class="tags">
+              <span class="tag">Facebook</span><span class="tag">Instagram</span><span class="tag">Canva</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="svc-card">
+            <div class="svc-icon"><i class="bi bi-files"></i></div>
+            <h5>Admin & Docs</h5>
+            <p>Preparing documents, creating templates, file organization, and general administrative support.</p>
+            <div class="tags">
+              <span class="tag">Google Docs</span><span class="tag">Notion</span><span class="tag">Trello</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="row align-items-center g-5">
-      <div class="col-lg-6 reveal">
-        <div class="eyebrow">About Me</div>
-        <h2 class="sec-title mb-3">Fresh Graduate.<br>Ready to Deliver.</h2>
-        <p class="about-intro">
-          I'm a fresh BSIT graduate with a passion for helping businesses thrive online.
-          I combine my technical background with creativity to manage social platforms, craft content,
-          handle communications, and edit visual media — all with a detail-obsessed mindset.
+  <!-- ════════════════ TOOLS ════════════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="eyebrow">Tools & Platforms</div>
+        <h2 class="sec-title">What I Work With</h2>
+      </div>
+      <div class="tool-grid reveal">
+
+        <!-- Google -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.8 10.2H12v3.6h5.7c-.5 2.6-2.7 4.2-5.7 4.2-3.3 0-6-2.7-6-6s2.7-6 6-6c1.5 0 2.8.5 3.8 1.4l2.7-2.7C16.8 3.3 14.5 2.4 12 2.4 6.7 2.4 2.4 6.7 2.4 12S6.7 21.6 12 21.6c5 0 9.4-3.6 9.4-9.4 0-.6-.1-1.4-.2-2z"
+                fill="#4285F4" />
+              <path
+                d="M3.8 7.3l3.1 2.3C7.7 7.7 9.7 6.4 12 6.4c1.5 0 2.8.5 3.8 1.4l2.7-2.7C16.8 3.3 14.5 2.4 12 2.4c-3.5 0-6.5 2-8.2 4.9z"
+                fill="#EA4335" />
+              <path
+                d="M12 21.6c2.5 0 4.7-.8 6.3-2.2l-2.9-2.4c-.9.6-2.1 1-3.4 1-3 0-5.2-1.6-5.7-4.2L2.4 16c1.7 3 5 5.6 9.6 5.6z"
+                fill="#34A853" />
+              <path d="M21.8 10.2H12v3.6h5.7c-.2 1.1-.9 2.1-1.9 2.7l2.9 2.4c1.7-1.6 2.7-4 2.7-6.7 0-.6-.1-1.4-.2-2z"
+                fill="#FBBC05" />
+            </svg>
+          </div>
+          <span>Google Suite</span>
+        </div>
+
+        <!-- Notion -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.5 3.4c.8.6 1 .6 2.7.5l14.5-.9c.3 0 .3 0 .3.3v1.2c0 .3 0 .4-.4.4l-1.6.1c-.3.1-.3.2-.3.5v14.3c0 .5-.1.8-.5.8-.5 0-.9-.3-1.4-.9l-9.7-14v11.7c.1.8.3 1 1.2 1.1l1.4.2c.4 0 .4.1.4.4v.8c0 .4 0 .4-.5.4L5.4 19c-.4 0-.4-.1-.4-.5v-.8c0-.3.1-.4.4-.4l1.4-.2c.5-.1.6-.3.6-1V6l-2.5-3.1c-.2-.3-.3-.5.1-.5zm17 1.4l-1 .6v10.4l1 .7c.3.3.5.3.5.9v.5c0 .4-.1.5-.4.4l-3.5-.3c-.4 0-.4-.1-.4-.5v-.5c0-.4 0-.4.3-.5l.9-.6V7.4l-3.9 11.3c-.1.3-.2.5-.5.5s-.4-.2-.5-.5L10 8.1v9.1l1.2.7c.3.2.4.3.4.6v.5c0 .3-.1.4-.4.3l-4.3-.3c-.3 0-.4-.1-.4-.4v-.6c0-.3.1-.4.4-.5l1.2-.5V7l-1.4-.5c-.3-.1-.4-.3-.4-.6V5c0-.3.1-.4.5-.3l3.9.4c.4 0 .5.2.7.6l3.3 8.8 3-8.8c.2-.4.2-.6.7-.6l4-.4c.4 0 .5.1.5.4v.7z"
+                fill="#000" />
+            </svg>
+          </div>
+          <span>Notion</span>
+        </div>
+
+        <!-- Trello -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.3 3 3 3h18c1.7 0 3-1.3 3-3V3c0-1.7-1.3-3-3-3zm-11.9 18.3c0 .9-.7 1.6-1.6 1.6H4.3c-.9 0-1.6-.7-1.6-1.6V5.7c0-.9.7-1.6 1.6-1.6h3.2c.9 0 1.6.7 1.6 1.6zm10.2-6.1c0 .9-.7 1.6-1.6 1.6h-3.2c-.9 0-1.6-.7-1.6-1.6V5.7c0-.9.7-1.6 1.6-1.6h3.2c.9 0 1.6.7 1.6 1.6z"
+                fill="#0052CC" />
+            </svg>
+          </div>
+          <span>Trello</span>
+        </div>
+
+        <!-- Slack -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.04 15.33a2.52 2.52 0 01-2.52 2.52A2.52 2.52 0 010 15.33a2.52 2.52 0 012.52-2.52h2.52v2.52zm1.26 0a2.52 2.52 0 012.52-2.52 2.52 2.52 0 012.52 2.52v6.3A2.52 2.52 0 018.82 24a2.52 2.52 0 01-2.52-2.52v-6.15zm2.52-10.29a2.52 2.52 0 01-2.52-2.52A2.52 2.52 0 018.82 0a2.52 2.52 0 012.52 2.52v2.52H8.82zm0 1.26a2.52 2.52 0 012.52 2.52 2.52 2.52 0 01-2.52 2.52H2.52A2.52 2.52 0 010 8.82a2.52 2.52 0 012.52-2.52h6.3zm10.29 2.52a2.52 2.52 0 012.52-2.52A2.52 2.52 0 0124 8.82a2.52 2.52 0 01-2.52 2.52h-2.52V8.82zm-1.26 0a2.52 2.52 0 01-2.52 2.52 2.52 2.52 0 01-2.52-2.52V2.52A2.52 2.52 0 0115.33 0a2.52 2.52 0 012.52 2.52v6.3zm-2.52 10.29a2.52 2.52 0 012.52 2.52A2.52 2.52 0 0115.33 24a2.52 2.52 0 01-2.52-2.52v-2.52h2.52zm0-1.26a2.52 2.52 0 01-2.52-2.52 2.52 2.52 0 012.52-2.52h6.3A2.52 2.52 0 0124 15.33a2.52 2.52 0 01-2.52 2.52h-6.15z"
+                fill="#E01E5A" />
+            </svg>
+          </div>
+          <span>Slack</span>
+        </div>
+
+        <!-- Zoom -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-6.7-4.9c-.3-.2-.7-.2-1 0L13.7 8.7V7.5c0-.5-.4-.9-.9-.9H6.9C6.4 6.6 6 7 6 7.5v9c0 .5.4.9.9.9h5.9c.5 0 .9-.4.9-.9v-1.2l2.6 1.6c.3.2.7.2 1 0 .3-.2.5-.5.5-.8V7.9c-.1-.3-.3-.6-.5-.8z"
+                fill="#2D8CFF" />
+            </svg>
+          </div>
+          <span>Zoom</span>
+        </div>
+
+        <!-- Canva -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.4c5.295 0 9.6 4.305 9.6 9.6s-4.305 9.6-9.6 9.6S2.4 17.295 2.4 12 6.705 2.4 12 2.4zm-1.2 3.6c-1.8 0-3.2 1.68-3.2 3.6 0 1.8 1 3.12 2.56 3.52-.24.96-.8 1.68-1.76 2.08.48.4 1.12.6 1.76.6 1.2 0 2.16-.64 2.72-1.68.48.16.96.24 1.52.24 2 0 3.6-1.6 3.6-3.76S14.6 6 12.8 6c-.56 0-1.04.08-1.44.24-.08-.16-.16-.24-.56-.24z"
+                fill="#00C4CC" />
+            </svg>
+          </div>
+          <span>Canva</span>
+        </div>
+
+        <!-- Asana -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.25 7.5a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm-10.5 0a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zM12 3.75a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"
+                fill="#F06A6A" />
+            </svg>
+          </div>
+          <span>Asana</span>
+        </div>
+
+        <!-- Gmail -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                fill="#EA4335" />
+            </svg>
+          </div>
+          <span>Gmail</span>
+        </div>
+
+        <!-- Calendly -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <i class="bi bi-calendar2-check"></i>
+          </div>
+          <span>Calendly</span>
+        </div>
+
+        <!-- Dropbox -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6 2L0 6l6 4 6-4-6-4zm12 0l-6 4 6 4 6-4-6-4zM0 14l6 4 6-4-6-4-6 4zm18-4l-6 4 6 4 6-4-6-4zm-6 5l-6 4 6 4 6-4-6-4z"
+                fill="#0061FF" />
+            </svg>
+          </div>
+          <span>Dropbox</span>
+        </div>
+
+        <!-- ChatGPT / AI -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.28 9.84a5.76 5.76 0 00-.49-4.73 5.85 5.85 0 00-6.29-2.8A5.76 5.76 0 0011.27 1a5.86 5.86 0 00-5.59 4.06 5.77 5.77 0 00-3.85 2.8 5.86 5.86 0 00.72 6.86 5.77 5.77 0 00.49 4.73 5.86 5.86 0 006.3 2.8A5.77 5.77 0 0012.73 23a5.87 5.87 0 005.6-4.06 5.77 5.77 0 003.85-2.8 5.86 5.86 0 00-.9-6.3zM12.73 21.5a4.35 4.35 0 01-2.79-1 .13.13 0 01.03-.04l4.63-2.67a.77.77 0 00.39-.67V11.6l1.96 1.13a.07.07 0 01.04.06v5.4a4.37 4.37 0 01-4.26 3.31zM3.6 17.55a4.36 4.36 0 01-.52-2.93l.04.02 4.63 2.67a.76.76 0 00.77 0l5.65-3.26v2.26a.07.07 0 01-.03.06L9.5 19.1a4.37 4.37 0 01-5.9-1.55zm-.98-9.9a4.34 4.34 0 012.26-1.91v5.47a.77.77 0 00.39.67l5.65 3.26-1.96 1.13a.07.07 0 01-.07 0L4.64 13.6a4.37 4.37 0 01-2.02-6zm16.1 3.74L14.07 8.1l1.96-1.13a.07.07 0 01.07 0l4.25 2.45a4.37 4.37 0 01-.68 7.89V11.8a.77.77 0 00-.39-.41zm1.95-2.95l-.04-.02-4.63-2.67a.76.76 0 00-.77 0L9.58 9.01V6.75a.07.07 0 01.03-.06l4.25-2.45a4.37 4.37 0 016.4 4.5v.2h-.01zm-12.26 4l-1.96-1.13a.07.07 0 01-.04-.06V5.85a4.37 4.37 0 017.17-3.35l-.04.02-4.63 2.67a.77.77 0 00-.39.67l-.11 6.43zm1.07-2.3L12 8.85l2.53 1.46v2.92L12 14.7 9.47 13.1l.01-2.96z"
+                fill="#10a37f" />
+            </svg>
+          </div>
+          <span>ChatGPT</span>
+        </div>
+
+        <!-- Microsoft Office -->
+        <div class="tool-tile">
+          <div class="tool-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.4 0H1.2C.5 0 0 .5 0 1.2v10.2l11.4 1.2V0z" fill="#F25022" />
+              <path d="M24 0H11.4v12.6L24 11.4V0z" fill="#7FBA00" />
+              <path d="M0 12.6v10.2C0 23.5.5 24 1.2 24h10.2V12.6H0z" fill="#00A4EF" />
+              <path d="M11.4 12.6V24H22.8c.7 0 1.2-.5 1.2-1.2V11.4L11.4 12.6z" fill="#FFB900" />
+            </svg>
+          </div>
+          <span>MS Office</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ MY SETUP ════════════════ -->
+  <section id="setup">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="eyebrow">Work Setup</div>
+        <h2 class="sec-title">My Remote Setup</h2>
+        <p class="sec-desc mx-auto" style="max-width:520px;">
+          Fully equipped for professional remote work — reliable hardware, fast internet,
+          and a productive workspace built for quality output.
         </p>
-        <p style="color:var(--muted); font-size:.95rem; line-height:1.8; margin-bottom:2rem;">
-          I'm a fast learner, a reliable communicator, and someone who genuinely cares about
-          making your brand look and feel its best. Remote-ready, async-friendly, and always on time.
+      </div>
+
+      <!-- PC Specs -->
+      <div class="row g-4 mb-4">
+
+        <!-- Laptop Specs -->
+        <div class="col-lg-6 reveal">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="bi bi-laptop"></i>
+              <h6>Laptop Specs</h6>
+            </div>
+            <div class="specs-body">
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-cpu"></i> Processor</span>
+                <span class="spec-val placeholder-val">Ryzen 9 5900hx</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-memory"></i> RAM</span>
+                <span class="spec-val placeholder-val">16gb 3200mhz</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-device-hdd"></i> Storage</span>
+                <span class="spec-val placeholder-val">1TB m.2 SSD x2 </span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-gpu-card"></i> Graphics</span>
+                <span class="spec-val placeholder-val">RTX 3070ti 8gb</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-display"></i> Screen</span>
+                <span class="spec-val placeholder-val">15.6 inch</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-windows"></i> OS</span>
+                <span class="spec-val placeholder-val">Windows 11 Pro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop / PC Specs -->
+        <div class="col-lg-6 reveal">
+          <div class="specs-card">
+            <div class="specs-header">
+              <i class="bi bi-pc-display"></i>
+              <h6>Desktop / PC Specs</h6>
+            </div>
+            <div class="specs-body">
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-cpu"></i> Processor</span>
+                <span class="spec-val placeholder-val">AMD Ryzen 5 5600x</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-memory"></i> RAM</span>
+                <span class="spec-val placeholder-val">16GB DDR4</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-device-hdd"></i> Storage</span>
+                <span class="spec-val placeholder-val">2TB SSD</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-gpu-card"></i> Graphics</span>
+                <span class="spec-val placeholder-val">RTX 4060 8gb</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-display"></i> Monitor</span>
+                <span class="spec-val placeholder-val">27" 1440p & 21" 1080p Dual Monitor</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-key"><i class="bi bi-windows"></i> OS</span>
+                <span class="spec-val placeholder-val">Windows 11 Pro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Internet Speed + Peripherals -->
+      <div class="row g-4">
+        <!-- Internet Speed -->
+        <div class="col-lg-5 reveal">
+          <div class="speed-card">
+            <div class="speed-header">
+              <i class="bi bi-wifi"></i>
+              <h6>Internet Speed</h6>
+            </div>
+            <!--
+            ★ ADD YOUR SPEEDTEST SCREENSHOT ★
+            1. Go to speedtest.net and run a test
+            2. Screenshot the result
+            3. Save as "speedtest.png" in the same folder
+            4. Replace the placeholder below with:
+               <img src="speedtest.png" alt="Speed Test" style="width:100%;border-radius:8px;margin:1rem;">
+          -->
+            <div class="speed-photo-area">
+              <img src="/picture/speedtest.png" alt="Speed Test" style="width:100%;border-radius:8px;margin:1rem;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Peripherals -->
+        <div class="col-lg-7 reveal">
+          <div class="eyebrow mb-2 text-center" style="border:none; padding:0;">Peripherals & Environment</div>
+          <h5 class="text-center"
+            style="color:var(--text); font-size:1.05rem; margin-bottom:1.2rem; font-family:'Playfair Display',serif;">
+            Professional Setup</h5>
+          <div class="row g-3">
+
+            <div class="col-sm-6">
+              <div class="setup-item">
+                <div class="setup-icon"><i class="bi bi-displays"></i></div>
+                <div class="setup-info">
+                  <h6>Dual Monitor</h6>
+                  <p>Extended display for multitasking — keeps communication and tasks side by side.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="setup-item">
+                <div class="setup-icon"><i class="bi bi-webcam"></i></div>
+                <div class="setup-info">
+                  <h6>Quality Webcam & Microphone</h6>
+                  <p>HD webcam and clear microphone for professional video calls and client meetings.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="setup-item">
+                <div class="setup-icon"><i class="bi bi-brightness-high"></i></div>
+                <div class="setup-info">
+                  <h6>Good Lighting Setup</h6>
+                  <p>Ring light and ambient lighting for a clear, professional appearance on camera.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="setup-item">
+                <div class="setup-icon"><i class="bi bi-phone"></i></div>
+                <div class="setup-info">
+                  <h6>Smartphone with Good Camera</h6>
+                  <p>High-quality camera phone for quick documentation, mobile tasks, and on-the-go communication.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="setup-item">
+                <div class="setup-icon"><i class="bi bi-router"></i></div>
+                <div class="setup-info">
+                  <h6>Reliable Connection Speed</h6>
+                  <p>Stable, high-speed internet with a backup connection — zero downtime during work hours.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ CONTACT ════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <div class="eyebrow">Get In Touch</div>
+        <h2 class="sec-title">Let's Work Together</h2>
+        <p class="sec-desc mx-auto" style="max-width:440px;">
+          Ready to get organized and take tasks off your plate? I'd love to hear about your needs.
         </p>
-        <div class="edu-card">
-          <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
-          <div>
-            <h6>Bachelor of Science in Information Technology</h6>
-            <p>Centro Escolar University (CEU)</p>
-            <span class="edu-badge">Class of 2025 🎓</span>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="contact-avatar">
+          <i class="bi bi-person-lines-fill"></i>
+        </div>
+        <h4 style="margin-bottom:.4rem;">Lesiree Bautista</h4>
+        <p style="color:var(--muted); font-size:.9rem; margin-bottom:0;">Virtual Assistant · Philippines 🇵🇭</p>
+
+        <div class="contact-links">
+          <a href="mailto:idolismylesiree@gmail.com" class="contact-link">
+            <i class="bi bi-envelope-fill"></i>
+            <span>Email <small style="color:var(--muted);">— idolismylesiree@gmail.com</small></span>
+          </a>
+          <a href="https://www.linkedin.com/in/lesiree-bautista-356738265/" class="contact-link">
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn Profile <small style="color:var(--muted);">— Lesiree Bautista</small></span>
+          </a>
+          <a href="#" class="contact-link">
+            <i class="bi bi-whatsapp"></i>
+            <span>WhatsApp / Viber <small style="color:var(--muted);">— 09653244856</small></span>
+          </a>
+          <!-- <a href="#" class="contact-link">
+          <i class="bi bi-chat-text"></i>
+          <span>Upwork / Fiverr <small style="color:var(--muted);">— add your profile link</small></span>
+        </a>
+      </div> -->
+
+          <div class="mt-3 d-flex gap-2 justify-content-center flex-wrap">
+            <span class="chip sage"><i class="bi bi-clock me-1"></i>Fast Response</span>
+            <span class="chip warm"><i class="bi bi-shield-check me-1"></i>Trustworthy</span>
+            <span class="chip sage"><i class="bi bi-globe me-1"></i>Remote-First</span>
           </div>
         </div>
-      </div>
-      <div class="col-lg-6 reveal">
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="text-center p-4" style="background:var(--card-bg); border-radius:20px; box-shadow:0 4px 20px rgba(244,63,94,.07);">
-              <div style="font-family:'Playfair Display',serif; font-size:2.5rem; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">100%</div>
-              <div style="font-size:.8rem; color:var(--muted); font-weight:600;">Remote-Ready</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="text-center p-4" style="background:var(--card-bg); border-radius:20px; box-shadow:0 4px 20px rgba(244,63,94,.07);">
-              <div style="font-family:'Playfair Display',serif; font-size:2.5rem; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">4</div>
-              <div style="font-size:.8rem; color:var(--muted); font-weight:600;">Core Services</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="text-center p-4" style="background:var(--card-bg); border-radius:20px; box-shadow:0 4px 20px rgba(244,63,94,.07);">
-              <div style="font-family:'Playfair Display',serif; font-size:2.5rem; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">24h</div>
-              <div style="font-size:.8rem; color:var(--muted); font-weight:600;">Response Time</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="text-center p-4" style="background:var(--card-bg); border-radius:20px; box-shadow:0 4px 20px rgba(244,63,94,.07);">
-              <div style="font-family:'Playfair Display',serif; font-size:2.5rem; background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;">PH</div>
-              <div style="font-size:.8rem; color:var(--muted); font-weight:600;">Based · GMT+8</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <div class="eyebrow">What I Offer</div>
-      <h2 class="sec-title">My Services</h2>
-    </div>
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-3 reveal">
-        <div class="svc-card">
-          <div class="svc-icon-wrap"><i class="bi bi-instagram" style="background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;"></i></div>
-          <h5>Social Media Management</h5>
-          <p>I'll grow and manage your social presence — from content planning to posting and community engagement.</p>
-          <ul class="svc-list">
-            <li>Content Calendar Planning</li>
-            <li>Caption Writing & Hashtags</li>
-            <li>Scheduling & Publishing</li>
-            <li>Engagement & DM Replies</li>
-            <li>Analytics Reporting</li>
-          </ul>
-        </div>
       </div>
+  </section>
 
-      <div class="col-md-6 col-lg-3 reveal">
-        <div class="svc-card">
-          <div class="svc-icon-wrap"><i class="bi bi-envelope-heart" style="background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;"></i></div>
-          <h5>Email Management</h5>
-          <p>Inbox zero achieved. I organize, respond, and manage your emails so you can focus on what matters.</p>
-          <ul class="svc-list">
-            <li>Inbox Organization & Filters</li>
-            <li>Drafting & Responding</li>
-            <li>Email Template Creation</li>
-            <li>Newsletter Management</li>
-            <li>Follow-up Tracking</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 reveal">
-        <div class="svc-card">
-          <div class="svc-icon-wrap"><i class="bi bi-image" style="background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;"></i></div>
-          <h5>Photo Editing</h5>
-          <p>Clean, professional, on-brand image editing for social media, websites, and marketing materials.</p>
-          <ul class="svc-list">
-            <li>Color Grading & Retouching</li>
-            <li>Background Removal</li>
-            <li>Social Media Graphics</li>
-            <li>Brand Consistency Edits</li>
-            <li>Batch Photo Processing</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-3 reveal">
-        <div class="svc-card">
-          <div class="svc-icon-wrap"><i class="bi bi-camera-video" style="background:var(--grad); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;"></i></div>
-          <h5>Video Editing</h5>
-          <p>Engaging short-form and long-form video edits that keep viewers watching and clicking.</p>
-          <ul class="svc-list">
-            <li>Reels & TikTok Edits</li>
-            <li>Captions & Subtitles</li>
-            <li>Transitions & Effects</li>
-            <li>YouTube Video Editing</li>
-            <li>Promo / Ad Clips</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- TOOLS & SKILLS -->
-<section id="tools">
-  <div class="container">
-    <div class="row g-5 align-items-start">
-      <div class="col-lg-5 reveal">
-        <div class="eyebrow">Expertise</div>
-        <h2 class="sec-title mb-4" style="color:#fff;">Tools &amp; Skills</h2>
-        <div class="skill-row">
-          <div class="label"><span>Social Media Management</span><span class="pct">80%</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Email Management</span><span class="pct">92%</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Photo Editing</span><span class="pct">85%</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Video Editing</span><span class="pct">80%</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Content Creation</span><span class="pct">88%</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
-        </div>
-        <div class="skill-row">
-          <div class="label"><span>Communication &amp; Organisation</span><span class="pct">95%</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
-        </div>
-      </div>
-      <div class="col-lg-7 reveal">
-        <div class="tool-grid">
-          <div class="tool-tile"><i class="bi bi-instagram"></i><span>Instagram</span></div>
-          <div class="tool-tile"><i class="bi bi-facebook"></i><span>Facebook</span></div>
-          <div class="tool-tile"><i class="bi bi-tiktok"></i><span>TikTok</span></div>
-          <div class="tool-tile"><i class="bi bi-twitter-x"></i><span>X / Twitter</span></div>
-          <div class="tool-tile"><i class="bi bi-linkedin"></i><span>LinkedIn</span></div>
-          <div class="tool-tile"><i class="bi bi-youtube"></i><span>YouTube</span></div>
-          <div class="tool-tile"><i class="bi bi-envelope"></i><span>Gmail</span></div>
-          <div class="tool-tile"><i class="bi bi-microsoft"></i><span>Outlook</span></div>
-          <div class="tool-tile"><i class="bi bi-palette2"></i><span>Canva</span></div>
-          <div class="tool-tile"><i class="bi bi-camera"></i><span>Lightroom</span></div>
-          <div class="tool-tile"><i class="bi bi-film"></i><span>CapCut</span></div>
-          <div class="tool-tile"><i class="bi bi-stars"></i><span>Premiere</span></div>
-          <div class="tool-tile"><i class="bi bi-calendar3"></i><span>Buffer</span></div>
-          <div class="tool-tile"><i class="bi bi-calendar-check"></i><span>Hootsuite</span></div>
-          <div class="tool-tile"><i class="bi bi-slack"></i><span>Slack</span></div>
-          <div class="tool-tile"><i class="bi bi-kanban"></i><span>Trello</span></div>
-          <div class="tool-tile"><i class="bi bi-journal"></i><span>Notion</span></div>
-          <div class="tool-tile"><i class="bi bi-zoom-in"></i><span>Zoom</span></div>
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p>© 2025 Lesiree Bautista · Virtual Assistant · Philippines 🇵🇭</p>
+        <div class="d-flex gap-3">
+          <a href="mailto:idolismylesiree@gmail.com"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/lesiree-bautista-356738265/"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- PORTFOLIO / SAMPLE WORK -->
-<section id="portfolio">
-  <div class="container">
-    <div class="text-center mb-5 reveal">
-      <div class="eyebrow">Sample Work</div>
-      <h2 class="sec-title">What I Can Do For You</h2>
-      <p style="color:var(--muted); max-width:520px; margin:0 auto; font-size:.95rem; line-height:1.7;">
-        Here's a snapshot of the kinds of tasks and projects I specialize in as a VA.
-      </p>
-    </div>
-    <div class="row g-4">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll reveal
+    const items = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 70);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    items.forEach(el => io.observe(el));
 
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="work-card">
-          <div class="work-thumb sm">
-            <i class="bi bi-grid-3x3-gap-fill text-white"></i>
-            <span class="work-tag sm-tag">Social Media</span>
-          </div>
-          <div class="work-body">
-            <h5>Instagram Feed Planning</h5>
-            <p>Creating a cohesive, on-brand Instagram content calendar with captions, hashtag research, and scheduled posts using Buffer.</p>
-            <span class="result-chip">Content Calendar</span>
-            <span class="result-chip ms-1">Canva Graphics</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="work-card">
-          <div class="work-thumb em">
-            <i class="bi bi-inbox-fill text-white"></i>
-            <span class="work-tag em-tag">Email</span>
-          </div>
-          <div class="work-body">
-            <h5>Inbox Zero Management</h5>
-            <p>Setting up Gmail filters, labels, canned responses, and a weekly inbox audit system to keep communications under control.</p>
-            <span class="result-chip">Gmail Setup</span>
-            <span class="result-chip ms-1">Templates</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="work-card">
-          <div class="work-thumb ed">
-            <i class="bi bi-camera-fill text-white"></i>
-            <span class="work-tag ed-tag">Editing</span>
-          </div>
-          <div class="work-body">
-            <h5>Brand Photo Editing</h5>
-            <p>Batch-editing product photos with consistent color grading, background removal, and size optimization for web & social use.</p>
-            <span class="result-chip">Lightroom</span>
-            <span class="result-chip ms-1">Canva</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="work-card">
-          <div class="work-thumb sm" style="background:linear-gradient(135deg,#ec4899,#f43f5e);">
-            <i class="bi bi-tiktok text-white"></i>
-            <span class="work-tag sm-tag">Video</span>
-          </div>
-          <div class="work-body">
-            <h5>TikTok & Reels Editing</h5>
-            <p>Cutting, pacing, adding trending audio, captions, and transitions to create short-form videos that hook viewers in the first 3 seconds.</p>
-            <span class="result-chip">CapCut</span>
-            <span class="result-chip ms-1">Premiere</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="work-card">
-          <div class="work-thumb em" style="background:linear-gradient(135deg,#14b8a6,#0ea5e9);">
-            <i class="bi bi-megaphone-fill text-white"></i>
-            <span class="work-tag em-tag">Community</span>
-          </div>
-          <div class="work-body">
-            <h5>Community Engagement</h5>
-            <p>Responding to comments, DMs, and mentions across platforms to keep your audience engaged and your brand voice consistent.</p>
-            <span class="result-chip">Instagram</span>
-            <span class="result-chip ms-1">Facebook</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4 reveal">
-        <div class="work-card">
-          <div class="work-thumb ed" style="background:linear-gradient(135deg,#f59e0b,#f43f5e);">
-            <i class="bi bi-bar-chart-fill text-white"></i>
-            <span class="work-tag ed-tag">Analytics</span>
-          </div>
-          <div class="work-body">
-            <h5>Social Media Reports</h5>
-            <p>Weekly and monthly performance reports tracking reach, engagement, follower growth, and top-performing content insights.</p>
-            <span class="result-chip">Google Sheets</span>
-            <span class="result-chip ms-1">Meta Insights</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container text-center">
-    <div class="mb-3">
-      <a href="mailto:idolismylesiree@gmail.com" class="social-a"><i class="bi bi-envelope-fill"></i></a>
-      <a href="#" class="social-a"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="social-a"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="social-a"><i class="bi bi-facebook"></i></a>
-    </div>
-    <p>© 2025 Lesiree Bautista · Virtual Assistant Portfolio · Philippines 🇵🇭</p>
-  </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  const revEls = document.querySelectorAll('.reveal');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 70);
-        obs.unobserve(e.target);
-      }
+    // Active nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const links = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      const y = window.pageYOffset;
+      sections.forEach(s => {
+        const top = s.offsetTop - 100, bot = top + s.offsetHeight;
+        if (y >= top && y < bot) {
+          links.forEach(l => {
+            l.style.color = '';
+            if (l.getAttribute('href') === '#' + s.id) l.style.color = 'var(--rose)';
+          });
+        }
+      });
     });
-  }, { threshold: 0.1 });
-  revEls.forEach(el => obs.observe(el));
-
-  // Active nav
-  const secs = document.querySelectorAll('section[id]');
-  const links = document.querySelectorAll('.nav-link');
-  window.addEventListener('scroll', () => {
-    const y = window.pageYOffset;
-    secs.forEach(s => {
-      const top = s.offsetTop - 100, bot = top + s.offsetHeight;
-      if (y >= top && y < bot) {
-        links.forEach(l => {
-          l.style.color = l.getAttribute('href') === '#' + s.id ? 'var(--peach)' : '';
-        });
-      }
-    });
-  });
-</script>
+  </script>
 </body>
+
 </html>
